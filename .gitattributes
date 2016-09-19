@@ -1,0 +1,4 @@
+test/*          export-ignore
+.editorconfig   export-ignore
+.gitignore      export-ignore
+.travis.yml     export-ignore
