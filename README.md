@@ -19,7 +19,7 @@ npm install bankid node-soap --save
 
 Below is an example showing how to use the library when making a request to the Authenticate method on the BankID SOAP API.
 
-```javascript
+```node
 const bankid = require('bankid);
 
 const options = {
