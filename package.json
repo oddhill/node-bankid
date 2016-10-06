@@ -7,10 +7,10 @@
     "lib": "./lib"
   },
   "scripts": {
-    "coverage": "instanbul cover mocha -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "lint": "node_modules/.bin/eslint ./lib",
+    "coverage": "istanbul cover _mocha && cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint ./lib",
     "test": "mocha ./test/*.test.js",
-    "test-watch": "mocha ./test/*.test.js -w"
+    "test:watch": "mocha ./test/*.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "eslint-plugin-promise": "^2.0.1",
     "eslint-plugin-standard": "^2.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.0.2",
+    "mocha": "^3.1.0",
     "mocha-lcov-reporter": "^1.2.0",
     "sinon": "^1.17.5"
   },
