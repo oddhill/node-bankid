@@ -1,5 +1,8 @@
 # BankID API Client
 
+[![Build Status](https://travis-ci.org/oddhill/node-bankid.svg?branch=master)](https://travis-ci.org/oddhill/node-bankid)
+[![Coverage Status](https://coveralls.io/repos/github/oddhill/node-bankid/badge.svg?branch=master)](https://coveralls.io/github/oddhill/node-bankid?branch=master)
+
 This package will help you make requests to the BankID SOAP API.
 
 ## Requirements
