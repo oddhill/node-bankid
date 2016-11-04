@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.0] - 2016-10-05
+### Added
+- The BankID certificate authortities are now added to both test and production requests.
+- Some tests for the BankID Service.
+
+### Changed
+- Require a node version higher than 5.0.0.
+
+### Fixed
+- Fixed issue when an error is not a BankID error. 
+
 ## [0.1.1] - 2016-10-05
 ### Fixed
 - Fixed issue with undefined error status and description.
