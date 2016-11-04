@@ -29,6 +29,10 @@
     "soap": "^0.17.0"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "@types/soap": "0.0.30",
     "chai": "^3.5.0",
     "coveralls": "^2.11.12",
     "eslint": "^3.5.0",
