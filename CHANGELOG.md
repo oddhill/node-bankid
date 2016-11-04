@@ -2,7 +2,15 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.2.0] - 2016-10-05
+## [0.2.1] - 2016-11-04
+### Chanegd
+- Changed package name to include a scope.
+
+### Fixed
+- Release dates were not correct in the changelog.
+- Version number in package.json.
+
+## [0.2.0] - 2016-11-04
 ### Added
 - The BankID certificate authortities are now added to both test and production requests.
 - Some tests for the BankID Service.
