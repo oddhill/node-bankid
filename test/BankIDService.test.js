@@ -1,35 +1,35 @@
-// Require dependencies.
-var assert = require('chai').assert;
-var sinon = require('sinon');
-var soapStub = require('soap/soap-stub');
+'use strict';
 
-// Require things to test.
-var BankID = require('../lib/BankID');
+var helpers = require('./helpers');
+var expect = require('chai').expect;
 var BankIDService = require('../lib/BankIDService');
-
-// Create the test client stub.
-var clientStub = {
-  Authenticate: sinon.stub(),
-  Collect: sinon.stub(),
-  Sign: sinon.stub(),
-};
-
-clientStub.Authenticate.respondWithError = soapStub.createRespondingStub({});
-
-soapStub.registerClient('BankID Stub Client', BankID.buildBankIDApiUrl('test'), clientStub);
+var BankIdError = require('../lib/BankIDError');
 
 describe('BankID Service', function () {
-  var clientStub;
-  var service;
 
-  beforeEach(function () {
-    clientStub = soapStub.getStub('BankID Stub Client');
-    soapStub.reset();
-    service = new BankIDService(clientStub);
+  describe('createBankIDError', function () {
+
+    it('should create a new BankIDError when the BankID API returns an error object', function () {
+      var error = BankIDService.createBankIDError(helpers.simulateBankIDError());
+      expect(error).to.be.instanceOf(BankIdError);
+    });
+
+    it('should return the initial error object if not a BankID error', function () {
+      var notBankIdError = new Error('Not a BankID error');
+      var error = BankIDService.createBankIDError(notBankIdError);
+      expect(error).to.equal(notBankIdError);
+    });
   });
 
-  it('should handle error responses', function (done) {
-    clientStub.Authenticate.respondWithError();
-    service.authenticate({}, done);
+  describe('isValidSSN', function () {
+
+    it('should return true on a ssn with 12 digits', function () {
+      expect(BankIDService.isValidSSN('199001011337')).to.equal(true);
+    });
+
+    it('should return false on a ssn that does not have 12 digits', function () {
+      expect(BankIDService.isValidSSN('19900101')).to.equal(false);
+      expect(BankIDService.isValidSSN('19900101133700')).to.equal(false);
+    });
   });
 });
