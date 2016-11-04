@@ -1,7 +1,7 @@
 'use strict';
 
 // Note that this example code was designed to be run directly from this
-// folder, some values may hve to be changed if you copy and paste this
+// folder, some values may have to be changed if you copy and paste this
 // code into your own project.
 
 const path = require('path');
