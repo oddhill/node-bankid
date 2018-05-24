@@ -14,8 +14,16 @@ This package will help you make requests to the BankID SOAP API.
 
 Run the following command in your terminal to install the module to your project.
 
+### NPM
+
 ```
-npm install bankid node-soap --save
+npm install @oddhill/bankid node-soap
+```
+
+### Yarn
+
+```
+yarn add @oddhill/bankid node-soap
 ```
 
 ## Example
