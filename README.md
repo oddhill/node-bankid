@@ -17,13 +17,13 @@ Run the following command in your terminal to install the module to your project
 ### NPM
 
 ```
-npm install @oddhill/bankid node-soap
+npm install @oddhill/bankid soap
 ```
 
 ### Yarn
 
 ```
-yarn add @oddhill/bankid node-soap
+yarn add @oddhill/bankid soap
 ```
 
 ## Example
