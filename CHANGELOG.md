@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.2] - 2019-03-26
+### Changed
+- Changed endpoint for BankID. Manual actions aren't necessary.
+
 ## [0.2.1] - 2016-11-04
 ### Changed
 - Changed package name to include a scope.
