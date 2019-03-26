@@ -1,6 +1,6 @@
 {
   "name": "@oddhill/bankid",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "A client to help you connect to the BankID API.",
   "main": "./lib/index.js",
   "directories": {
