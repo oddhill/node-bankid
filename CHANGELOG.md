@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.3] - 2019-03-26
+### Changed
+- Updated production and test certificates.
+### Fixed
+- Fixed failing test.
+
 ## [0.2.2] - 2019-03-26
 ### Changed
 - Changed endpoint for BankID. Manual actions aren't necessary.
