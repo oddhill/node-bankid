@@ -40,7 +40,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-promise": "^4.0.0",
     "istanbul": "^0.4.5",
-    "mocha": "^5.2.0",
+    "mocha": "^6.2.1",
     "mocha-lcov-reporter": "^1.2.0",
     "sinon": "^6.0.0",
     "soap": "^0.24.0"
