@@ -10,7 +10,7 @@ describe('BankID Service', function () {
   describe('createBankIDError', function () {
 
     it('should create a new BankIDError when the BankID API returns an error object', function () {
-      var error = BankIDService.createBankIDError(helpers.simulateBankIDError());
+      var error = BankIDService.createBankIDError(null, helpers.simulateBankIDError());
       expect(error).to.be.instanceOf(BankIdError);
     });
 

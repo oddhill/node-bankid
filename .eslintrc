@@ -2,14 +2,15 @@
   "root": true,
   "extends": "standard",
   "plugins": [
-      "standard",
-      "promise"
+    "standard",
+    "promise"
   ],
   "env": {
     "node": true
   },
   "rules": {
     "semi": "off",
-    "comma-dangle": "off"
+    "comma-dangle": "off",
+    "space-before-function-paren": "off"
   }
 }

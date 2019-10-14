@@ -9,20 +9,8 @@
 exports.simulateBankIDError = function () {
   const error = new Error('Some error message');
 
-  error.root = {
-    Envelope: {
-      Body: {
-        Fault: {
-          detail: {
-            RpFault: {
-              faultStatus: 'SOME_FAULT_STATUS',
-              detailedDescription: 'Some detailed description',
-            },
-          },
-        },
-      },
-    },
-  };
+  error.errorCode = 'someErrorCode';
+  error.details = 'Some error details';
 
   return error;
 }
