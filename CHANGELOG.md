@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0] - 2019-10-11
+### Changed
+- HTTP/JSON replaces SOAP/XML.
+### Added
+- Cancel method.
+
 ## [0.2.3] - 2019-03-26
 ### Changed
 - Updated production and test certificates.
