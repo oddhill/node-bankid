@@ -1,0 +1,8 @@
+example
+test
+.editorconfig
+.eslintrc
+.gitattributes
+.gitignore
+.travis.yml
+jsconfig.json
