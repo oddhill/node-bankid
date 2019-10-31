@@ -43,6 +43,7 @@ bankid(options, (err, service) => {
 
 	const args = {
 		personalNumber: '199801011234',
+    endUserIp: '192.168.0.1',
 	};
 
 	service.authenticate(args, (err, response) => {
