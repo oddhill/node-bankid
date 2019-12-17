@@ -28,7 +28,7 @@
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.12",
-    "@types/request": "^2.48.3",
+    "@types/request": "^2.48.4",
     "chai": "^4.2.0",
     "eslint": "^6.5.1",
     "eslint-config-standard": "^14.1.0",
